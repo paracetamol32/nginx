@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "base-e21e"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "base-e21e"
+  template:
+    metadata:
+      labels:
+        app: "base-e21e"
+    spec:
+      containers:
+        - name: "base-e21e"
+          image: "containerk8s.azurecr.io/base"
+          ports:
+          - containerPort: 80
