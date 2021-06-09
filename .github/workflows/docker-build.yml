@@ -46,3 +46,15 @@ jobs:
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
+      - 
+        name: Update rancher deployment
+        uses: th0th/rancher-redeploy-workload@v0.6
+        env:
+          RANCHER_BEARER_TOKEN: ${{ secrets.RANCHER_BEARER_TOKEN }}
+          RANCHER_CLUSTER_ID: 'c-h5h8d'
+          RANCHER_NAMESPACE: 'nginx'
+          RANCHER_PROJECT_ID: 'p-r5nwz'
+          RANCHER_URL: 'https://rancher.vecteur.it'
+          RANCHER_WORKLOADS: 'nginx-deployment'
+          RANCHER_DOCKER_REGISTRY: 'hub.docker.com'
+          UPDATE_IMAGES: 'paracetamol32/nginxtest:latest'
