@@ -53,7 +53,7 @@ jobs:
           RANCHER_BEARER_TOKEN: ${{ secrets.RANCHER_BEARER_TOKEN }}
           RANCHER_CLUSTER_ID: 'c-h5h8d'
           RANCHER_NAMESPACE: 'nginx'
-          RANCHER_PROJECT_ID: 'p-r5nwz'
+          RANCHER_PROJECT_ID: 'p-s6rhf'
           RANCHER_URL: 'https://rancher.vecteur.it'
           RANCHER_WORKLOADS: 'nginx-deployment'
           RANCHER_DOCKER_REGISTRY: 'hub.docker.com'
