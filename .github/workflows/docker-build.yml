@@ -51,7 +51,7 @@ jobs:
         uses: th0th/rancher-redeploy-workload@v0.6
         env:
           RANCHER_BEARER_TOKEN: ${{ secrets.RANCHER_BEARER_TOKEN }}
-          RANCHER_CLUSTER_ID: 'c-h5h8d'
+          RANCHER_CLUSTER_ID: 'c-pj525'
           RANCHER_NAMESPACE: 'nginx'
           RANCHER_PROJECT_ID: 'p-s6rhf'
           RANCHER_URL: 'https://rancher.vecteur.it'
