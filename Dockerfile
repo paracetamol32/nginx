@@ -1,5 +1,5 @@
 FROM nginx:stable
 
 
-COPY --chown=www-data:www-data  html /usr/share/nginx/html
+COPY --chown=1001:1001  html /usr/share/nginx/html
 
